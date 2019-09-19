@@ -22,3 +22,11 @@
 
 ### wps office:
 - to install the lost fonts, go to https://github.com/iamdh4/ttf-wps-fonts
+- To solve the problem of opening document in Ark, run:
+```bash
+$ cd /usr/share/mime/packages
+$ sudo rm wps-office-et.xml
+$ sudo rm wps-office-wpp.xml
+$ sudo rm wps-office-wos.xml
+$ sudo update-mime-database /usr/share/mime
+```
